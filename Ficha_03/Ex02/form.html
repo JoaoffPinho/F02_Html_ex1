@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TW-F03-EX02</title>
+</head>
+<body>
+    <h1>Registration From</h1>
+    <form action="form.html" method="POST">
+        <fieldset >
+            <legend>Personal info</legend>
+            
+            <div>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" pattern="[A-Z][a-z]+\s[A-Z][a-z]+" required>
+            </div>
+            
+            <div>
+                <label for="member">Member</label>
+                <input type="radio" name="membership" id="member" value="member" checked>
+                <label for="non-member">Non-Member</label>
+                <input type="radio" name="membership" id="non-member" value="non-member">
+            </div>
+
+            <div>
+                <label for="email">Email</label>
+                <input type="email"  name="email" id="email" >
+            </div>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Reservation info</legend>
+            
+            <div>
+                <label for="facility">Facility</label>
+                <select name="facility" id="facility">
+                    <option value="badmintpon">Badminton</option>
+                    <option value="squash">Squash</option>
+                    <option value="racquetball">Racquetball</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="time">Select a reservation date and time</label>
+                <input type="datetime-local" name="time" id="time">
+            </div>
+
+            <div>
+                <input type="checkbox" name="policy" id="policy" required>
+                <label for="policy">I agree to the club’s reservation policy</label>
+            </div>
+
+        </fieldset>
+        <input type="submit" name="submitbutton" id="submitbutton">
+    </form>
+
+</body>
+</html>
