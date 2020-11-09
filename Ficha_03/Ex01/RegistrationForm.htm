@@ -6,6 +6,7 @@
     <title>TW-F03-EX01</title>
 </head>
 <body>    
+    <h1>Registration Form</h1>
     <form action="https://www.webucator.com/course-demos/htm101/process-form.cfm"
         method="post">
         
@@ -31,12 +32,30 @@
             <input type="checkbox" name="terms" id="terms">
         </div>
 
-        
+        <div>
+            <label for="referral">Where did zou hear about us?</label>
+            <select name="referral" id="referral">
+                <option value="0">~~Please Choose~~</option>
+                <option value="wom">Word of mouth</option>
+                <option value="other">Other</option>
+                <optgroup label="Search Engine">
+                    <option value="Google">Google</option>
+                    <option value="Yahoo">Yahoo!</option>
+                    <option value="MSN">MSN</option>
+                </optgroup>
 
+            </select>
+        </div>
+        
+        <div>
+            <label for="Comments">Comments</label>
+            <br>
+            <textarea name="comments" id="comments" cols="40" rows="3"></textarea>                    
+        </div>
 
         <input type="hidden" name="emailMe" id="emailMe" value="40200357@esmad.ipp.pt">
-        <input type="submit" value="Register">
-        <input type="reset" value="Reset" >
+        <input type="submit" name="submitbutton" id="submitbutton" value="Register">
+        <input type="reset" name="resetbutton" id="resetbutton" value="Reset" >
     </form>
 </body>
 
