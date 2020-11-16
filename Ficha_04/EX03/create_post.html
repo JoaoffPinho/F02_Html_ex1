@@ -10,7 +10,23 @@
         <h1>Criar post</h1>
     </header>
     <main>
-        
+        <form action="create_post.html" method="POST" id="form1">
+            <div>
+                <label for="title">Título</label>
+                <input type="text" name="title" id="title" size="25" required>
+            </div>
+            <div>
+                <label for="content">Texto</label>
+                <textarea name="content" id="content" cols="30" rows="10"></textarea>
+            </div>
+            <div>
+                <label for="video">Vidéo</label>
+                <input type="file" name="video" id="video">
+            </div>
+            <div>
+                <input type="submit">
+            </div>
+        </form>
     </main>
 </body>
 </html>
