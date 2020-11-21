@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TSIW-F05-EX3</title>
+</head>
+<body>
+    <form action="form.html" method="post">
+        <fieldset>
+            
+            <label for="Name">Name:</label>
+            <input type="text" name="Name" id="Name">
+            
+            <fieldset>
+                <legend>Age</legend>
+                
+                <label for="under18">&#60; 18</label>
+                <input type="radio" name="Age" id="under18" value="under18">
+
+                <label for="19-35">19-35</label>
+                <input type="radio" name="Age" id="19-35" value="19-35">
+
+                <label for="36-48">36-48</label>
+                <input type="radio" name="Age" id="36-48" value="36-48">
+
+                <label for="over49">&#62; 49</label>
+                <input type="radio" name="Age" id="over49" value="over49">
+            </fieldset>
+
+
+            <label for="profession">Profession:</label>
+            <input type="text" name="profession" id="profession">
+
+            <label for="country">Country:</label>
+            <select name="country" id="country">
+                <option value="portugal">Portugal</option>
+                <option value="suíça">Suíça</option>
+                <option value="França">França</option>
+            </select>
+
+            <fieldset>
+                <legend>Interests</legend>
+
+                <label for="photography">Photography</label>
+                <input type="checkbox" name="photography" id="photography" value="photography">
+
+                <label for="music">Music</label>
+                <input type="checkbox" name="music" id="music" value="music">
+
+                <label for="cinema">Cinema</label>
+                <input type="checkbox" name="cinema" id="cinema" value="cinema">
+
+                <label for="computers">Computers</label>
+                <input type="checkbox" name="computers" id="computers" value="computers">
+            </fieldset>
+
+            <div>
+                <label for="how">How did you discover us:</label>
+                <textarea name="hoe" id="how" cols="45" rows="5"></textarea>
+            </div>
+
+            <div>
+                <input type="submit" id="submit" value="submit">
+            </div>
+        </fieldset>        
+    </form>
+</body>
+</html>
