@@ -14,4 +14,26 @@
     background-color: black;
     font-family: Helvetica, sans-serif;
     vertical-align: top;
+    width: 150px;
+    height: 150px;
+}
+
+@media all and (min-width: 961px) {
+    .box{
+        background-color: rgba(100, 100, 100, 0.5);
+    }
+}
+
+@media all and (max-width : 960px) {
+    .box{
+        background-color: blue;
+    }
+}
+
+@media all and (max-width : 650px) {
+    .box{
+        background-color: red;
+        width: 100px;
+        height: 100px;
+    }
 }
