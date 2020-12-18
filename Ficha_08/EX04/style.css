@@ -23,6 +23,10 @@
 
 .box-1 {
     /* Define background here */
+    background-image:url(css3.png), url(html5.png) ;
+    background-repeat: no-repeat, no-repeat;
+    background-position: left top, right top;
+    background-size: 60px 60px, 50px 50px;
 }
 
 .box-2 {
