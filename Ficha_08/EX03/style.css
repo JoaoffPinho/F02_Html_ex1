@@ -23,8 +23,9 @@
 
 .box-1 {
     /* Add transition here */
-    transition-delay: 0.5s;
-    transition-duration: 2s;
+    transition: background-color 2s linear 0.5s;
+    /*transition-delay: 0.5s;
+    transition-duration: 2s;*/
 }
 
 .box-1:hover {
@@ -34,8 +35,9 @@
 
 .box-2 {
     /* Add transition here */
-    transition-delay: 0.5s;
-    transition-duration: 3s;
+    transition: color 2s ease 0.5s;
+    /*transition-delay: 0.5s;
+    transition-duration: 3s;*/
 }
 
 .box-2:hover {
@@ -45,8 +47,9 @@
 
 .box-3 {
     /* Add transition here */
-    transition-delay: 3s;
-    transition-duration: 0.5s;
+    transition: width 0.5s ease 3s;
+    /*transition-delay: 3s;
+    transition-duration: 0.5s;*/
 }
 
 .box-3:hover {
@@ -56,8 +59,7 @@
 
 .box-4 {
     /* Add transition here */
-    transition: height 5s;
-    transition: width 0.5s;
+    transition: width 0.5s ,height 5s;
 }
 
 .box-4:hover {
